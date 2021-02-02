@@ -1,6 +1,11 @@
-spring:
-  cloud:
-    client:
-      ip-address: 127.0.0.1
 server:
   port: 7777
+spring:
+  application: config-center
+  profiles:
+    active: dev
+  cloud:
+    inetutils:
+      preferred-networks: 127.0.0.1
+    client:
+      ip-address: 127.0.0.1
