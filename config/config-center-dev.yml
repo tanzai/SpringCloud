@@ -6,6 +6,6 @@ spring:
     active: dev
   cloud:
     inetutils:
-      preferred-networks: 127.0.0.1
+      preferred-networks: 192.168.50.88
     client:
-      ip-address: 127.0.0.1
+      ip-address: 192.168.50.88
