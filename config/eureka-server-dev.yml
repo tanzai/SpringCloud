@@ -1,0 +1,10 @@
+server:
+  port: 8761
+spring:
+  application: eurekaserver
+  cloud:
+    inetutils:
+      preferred-networks: 127.0.0.1
+    client:
+      ip-address: 127.0.0.1
+  
