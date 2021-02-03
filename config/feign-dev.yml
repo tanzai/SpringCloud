@@ -1,4 +1,8 @@
 eureka:
+  instance:
+    prefer-ip-address: true	 #是否以 IP 注册到注册中心，Eureka 默认是以 hostname 来注册的
+    hostname: ${spring.cloud.client.ip-address} #设置当前实例的主机名称
+    instanceId: ${spring.application.name}:${spring.cloud.client.ip-address}:${server.port} #实例id: 服务名:ip:端口
   client:
     serviceUrl:
       defaultZone: http://localhost:8761/eureka/
